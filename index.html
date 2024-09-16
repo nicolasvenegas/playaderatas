@@ -7,6 +7,7 @@
   <!-- Compressed CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
   <link rel="stylesheet" href="styles/style_1.css">
   <title>Primera nota</title>
 </head>
@@ -15,11 +16,9 @@
 <div class="grid-container">
   <div class="grid-x">
     <div class="small-12 cell">
-      <p>22 de septiembre, 2024</p>
-      <p>Rodrigo Venegas Cisternas</p>
-      <p>textos</p>
-      <h2 id="planteamiento-inicial-del-proyecto">Planteamiento inicial
-      del proyecto</h2>
+      
+      <h1 id="proyecto">proyecto</h1>
+      <h2 id="planteamiento-inicial">Planteamiento inicial</h2>
       <p>La actividad que se propone realizar es la creación de un
       dispositivo portable que envie imagenes en tiempo real moduladas
       en BLU (Banda Lateral Única) con la codificación SSTV.</p>
@@ -64,7 +63,7 @@
       <p>La explicación del codificador se encuentra en la web del
       RadioClub y el codificador completo se encuentra en el trabajo
       final expuesto más tarde.</p>
-      <h1 id="codificación">Codificación</h1>
+      <h2 id="codificación">Codificación</h2>
       <h3
       id="codificación-del-middleware-del-síntesis-de-audio">Codificación
       del middleware del síntesis de audio</h3>
@@ -84,6 +83,13 @@
       esto, hemos usado la libreria JPEGDecoder6 de Bodmer.
       Interconexión y programación de todos los sistemas</p>
       <p>El esquemático final del proyecto es el siguiente:</p>
+      <hr/>
+      <ul class="menu expanded">
+        <li>Rodrigo Venegas Cisternas</li>
+        <li>22 de septiembre, 2024</li>
+          <li class="text-right">textos</li>
+      </ul>
+      <hr/>
     </div>
   </div>
 </div>
@@ -91,6 +97,21 @@
 <!-- Compressed JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"
   crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+  <script>
+    const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  </script>
 </body>
 
 </html>
