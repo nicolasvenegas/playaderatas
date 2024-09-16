@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="date" content=''>
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <link ref="stylesheet" src="../styles/style_1.css">
+  <title>primera nota</title>
+</head>
+
+<body>
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <p>22 de septiembre, 2024</p>
+      <p>rodrigo venegas</p>
+      <p>textos</p>
+      <h2 id="planteamiento-inicial-del-proyecto">Planteamiento inicial
+      del proyecto</h2>
+      <p>La actividad que se propone realizar es la creación de un
+      dispositivo portable que envie imagenes en tiempo real moduladas
+      en BLU (Banda Lateral Única) con la codificación SSTV.</p>
+      <p>En la imagen emitida en la banda de radioaficionados VHF deberá
+      de incorporar información de quién está emitiendo y los valores de
+      los distintos sensores.</p>
+      <p>La transmisión se deberá de realizar con la suficiente potencia
+      y las especificaciones del protocolo SSTV para que sea posible su
+      recepción desde tierra. Organización y desarrollo</p>
+      <p>Para la realización de este proyecto se ha divido el diferentes
+      partes. Cada participante se hacía responsable de su tarea. Las
+      diferentes tareas son las siguientes:</p>
+      <ol type="1">
+      <li>Elección de la plataforma de desarrollo.</li>
+      <li>Creación del codificador de SSTV.</li>
+      <li>Codificación del middleware del síntesis de audio.</li>
+      <li>Codificación del middleware para la recepción de imagenes con
+      arduino.</li>
+      <li>Decodificador de la imagen JPG.</li>
+      <li>Interconexión y programación de todos los sistemas.</li>
+      </ol>
+      <h2 id="elección-de-la-plataforma-de-desarrollo">Elección de la
+      plataforma de desarrollo</h2>
+      <p>La principal requisito es utilizar un microcontrolador tipo
+      Arduino, frente a un mini-pc con Linux. La principal razón es que
+      queremos tener control total de la emisión creando todos los
+      elementos desde la base.</p>
+      <p>De los diferentes microcontroladores del mercado necesitamos
+      uno lo suficientemente capaz de decodificar una imagen y guardar
+      todos los pixeles en RAM. Esto ya nos limita bastante las
+      posibilidades, pues la gran mayoria de microcontroladores de la
+      familia arduino se quedan fuera.</p>
+      <p>Otro requisito es que tiene que contar con 2 conexiones UART
+      para la comunicación con la cámara, y el GPS.</p>
+      <p>Por estos motivos el micro utilizado ha sido el Arduino DUE.
+      Aunque para versiones futuras se podría utilizar el ESP32.
+      Codificador SSTV Scottie 1</p>
+      <p>Se ha optado por elegir el codificador SSTV Scottie 1 porque es
+      robusto y rápido para enviar imágenes a color en banda estrecha.
+      Se ha creado un codificador libre con las especificaciones del
+      protocolo SSTV Scottie 11.</p>
+      <p>La explicación del codificador se encuentra en la web del
+      RadioClub y el codificador completo se encuentra en el trabajo
+      final expuesto más tarde.</p>
+      <h2
+      id="codificación-del-middleware-del-síntesis-de-audio">Codificación
+      del middleware del síntesis de audio</h2>
+      <p>Para sintetizar el audio del codificador SSTV se ha utilizado
+      el Sintetizador digital AD98502 con el uso de la librería para
+      arduino AD98503 de F4GOJ.</p>
+      <h2
+      id="codificación-del-middleware-para-la-recepción-de-imagenes-con-arduino">Codificación
+      del middleware para la recepción de imagenes con arduino</h2>
+      <p>Para tomar la imagen de la Cámara TTL de Adafruit4 se ha
+      utilizado la librería de Adafruit
+      Adafruit-VC0706-Serial-Camera-Library5.</p>
+      <h2 id="decodificador-de-la-imagen-jpg">Decodificador de la imagen
+      JPG</h2>
+      <p>Para emitir la imagen en SSTV, primero se tiene que decodificar
+      y conseguir en hexadecimal el contenido de la imagen. Para hacer
+      esto, hemos usado la libreria JPEGDecoder6 de Bodmer.
+      Interconexión y programación de todos los sistemas</p>
+      <p>El esquemático final del proyecto es el siguiente:</p>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
