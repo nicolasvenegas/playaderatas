@@ -22,7 +22,6 @@
     --colorBG: rgb(244, 200, 193);
 }
 
-
 html {
     font-size: 16px;
 }
@@ -53,13 +52,14 @@ h5,
     line-height: 1.15;
 }
 
-h1{
+h1 {
     margin: 0 0 var(--vspace-1) 0;
     line-height: calc(5.2917/var(--space)* var(--vspace));
     margin-top: 0;
     font-size: 1.8em;
     line-height: 1.4;
-    img{
+
+    img {
         max-width: 250px;
         margin: 2rem 0 1rem 0;
         mix-blend-mode: color;
@@ -162,12 +162,11 @@ hr {
     border-left: 0;
 }
 
-
-
-#featured-image{
-    max-height: 60vh;
+#featured-image {
+    max-height: 55vh;
     overflow: hidden;
 }
+
 #sidebar {
     border-right: 1px solid rgba(0, 0, 0, 1);
     min-height: 100vh;
@@ -180,6 +179,7 @@ hr {
     .menu {
         margin: 0;
         border-top: 1px solid black;
+
         li {
             border-bottom: 1px solid black;
             padding: 0.3rem 1rem;
@@ -188,33 +188,48 @@ hr {
 
             a {
                 color: black;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 font-weight: 500;
+
+                span {
+                    display: inline-block;
+                    margin-top: 0.25rem;
+                    font-weight: 600;
+                    font-size: .77rem;
+                }
+
                 small {
                     margin-top: 8px;
                     display: inline-block;
                     font-weight: 500;
                     font-family: 'Rubik', sans-serif;
+                    font-size: .7rem;
+                }
+
+                hr {
+                    margin: 0.7rem 0 .4rem 0;
+                    max-width: 10%;
                 }
             }
         }
-        li:hover, li:focus{
-            box-shadow: inset 0px 2px 1px rgba(0,0,0,.5), 0px 1px 0px rgba(255,255,255,0.35);
-            background: rgba(255,255,255,0.1);
-            
+
+        li:hover,
+        li:focus {
+            box-shadow: inset 0px 2px 1px rgba(0, 0, 0, .5), 0px 1px 0px rgba(255, 255, 255, 0.35);
+            background: rgba(255, 255, 255, 0.1);
+
         }
     }
 }
-
-
 
 #content {
     margin: 0 0 12rem 0;
 
     #inner {
-        h2{
-            height: 40vh;
+        h2 {
+            height: 45vh;
         }
+
         img {
             margin: 2rem 0;
         }
@@ -307,7 +322,8 @@ hr {
         overflow-y: scroll;
         max-height: 100%;
         scrollbar-color: red;
-        background:#FF9966
+        background: #cccd33;
+        /* #FF9966 */
         /* #FF6699;  */
         /* #cccc33; */
     }
