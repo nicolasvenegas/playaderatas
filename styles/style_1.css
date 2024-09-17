@@ -2,156 +2,169 @@
 
 /* Por defecto */
 
-.grid-container{
+.grid-container {
     max-width: 70rem;
 }
+
 :root {
     /* Increase or decrease the number 
     to change the vertical spacing globally*/
-      
+
     /* Base Vertical Spacing */
-        --space: 1.62;
-    
+    --space: 1.62;
+
     /* Vertical Spacing - multiplier */
-        --vspace: calc(var(--space) * 0.87rem);
-        --vspace-0: calc(3 * var(--space) * 1rem);
-        --vspace-1: calc(1 * var(--space) * 1rem);
-        --vspace-2: calc(1.5 * var(--space) * 1rem);
-        --vspace-3: calc(0.5 * var(--space) * 1rem);
-    }
-    
-    
-    html {font-size: 16px;}
-    body {
-        max-width: calc(35 * var(--vspace));
-        margin: 0 auto;
-        font-family: "Mingzat", sans-serif  ;
-        line-height: 1.65;
-        background-color: #fefefe;
-        letter-spacing: -.25px;
-    }
-    p {
-        font-size: 1.05em;
-        margin: var(--vspace) 0; 
-        line-height: var(--vspace);
-      }
-      
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      .menu {
-        font-family: 'Rubik', sans-serif;
-        font-weight: normal;
-        line-height: 1.15;
-      }    
-    h1 {
-        margin: var(--vspace-1) 0 var(--vspace-1) 0;
-        line-height: calc(5.2917/var(--space)* var(--vspace));
-      margin-top: 0;
-      font-size: 1.8em;
-      text-transform: uppercase;
-    }
-    h2 {
-        margin: var(--vspace-2) 0 var(--vspace-3) 0;
-        line-height: 1em;
-        font-size: 1.6em; 
-    }
-    h3 {
-        margin: var(--vspace-2) 0 var(--vspace-3) 0;
-        line-height: 1em;
-        font-size: 1.42em;
-        font-weight: normal;
-    }
-    h4{
-        margin: var(--vspace-2) 0 var(--vspace-3) 0;
-        line-height: var(--vspace);
-        font-size: 1.27em;
-    }
-    h5{
-        margin: var(--vspace-2) 0 var(--vspace-3) 0;
-        line-height: var(--vspace);
-        font-size: 1.13em;
-    } 
-    h6{
-        margin: var(--vspace-2) 0 var(--vspace-3) 0;
-        line-height: var(--vspace);
-        font-size: 0.89em;
-    }    
-    small,
-    .text-small {
-      font-size: 0.79em;
-    }
-    sup { 
-        font-size: 0.6667rem;
-        margin: .5em; 
-        text-transform: none;
-        font-style: italic;
-        font-weight: normal;
-    }
-    ul, ol, blockquote, blockquote p{
-        color: rgba(0,0,0,0.75);
-    }
-    blockquote{
-        margin: 0;
-        padding-top: 0;
-        margin: var(--vspace-2) 0;
-    }
-    ol, ul{
-        line-height: 1.75;
-        margin-bottom: var(--vspace-2);
-    }
-    ul{
-        list-style-type: disclosure-closed;
-        margin-left: 0.85rem !important;
-    }
+    --vspace: calc(var(--space) * 0.87rem);
+    --vspace-0: calc(3 * var(--space) * 1rem);
+    --vspace-1: calc(1 * var(--space) * 1rem);
+    --vspace-2: calc(1.5 * var(--space) * 1rem);
+    --vspace-3: calc(0.5 * var(--space) * 1rem);
+}
 
-    #content{
-        margin: 12rem 0;
-    }
 
-    .menu.expanded{
-        border-top: 1px solid black;
-        position: fixed;
-      left: 0;
-      width: 100%;
-      padding: 1rem 1.7rem;
-      background: rgba(255,255,255,1);
-      color: rgba(0,0,0,1);
-      margin: 0 !important;
-      bottom: 0;
-    }
-    
+html {
+    font-size: 16px;
+}
+
+body {
+    max-width: calc(35 * var(--vspace));
+    margin: 0 auto;
+    font-family: "Mingzat", sans-serif;
+    line-height: 1.65;
+    background-color: rgb(225, 172, 204);
+    letter-spacing: -.25px;
+}
+
+p {
+    font-size: 1.05em;
+    margin: var(--vspace) 0;
+    line-height: var(--vspace);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.menu {
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+h1 {
+    margin: var(--vspace-1) 0 var(--vspace-1) 0;
+    line-height: calc(5.2917/var(--space)* var(--vspace));
+    margin-top: 0;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: var(--vspace-2) 0 var(--vspace-3) 0;
+    line-height: 1em;
+    font-size: 1.6em;
+}
+
+h3 {
+    margin: var(--vspace-2) 0 var(--vspace-3) 0;
+    line-height: 1em;
+    font-size: 1.42em;
+    font-weight: normal;
+}
+
+h4 {
+    margin: var(--vspace-2) 0 var(--vspace-3) 0;
+    line-height: var(--vspace);
+    font-size: 1.27em;
+}
+
+h5 {
+    margin: var(--vspace-2) 0 var(--vspace-3) 0;
+    line-height: var(--vspace);
+    font-size: 1.13em;
+}
+
+h6 {
+    margin: var(--vspace-2) 0 var(--vspace-3) 0;
+    line-height: var(--vspace);
+    font-size: 0.89em;
+}
+
+small,
+.text-small {
+    font-size: 0.79em;
+}
+
+sup {
+    font-size: 0.6667rem;
+    margin: .5em;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+}
+
+ul,
+ol,
+blockquote,
+blockquote p {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+blockquote {
+    margin: 0;
+    padding-top: 0;
+    margin: var(--vspace-2) 0;
+}
+
+ol,
+ul {
+    line-height: 1.75;
+    margin-bottom: var(--vspace-2);
+}
+
+ul {
+    list-style-type: disclosure-closed;
+    margin-left: 0.85rem !important;
+}
+
+#content {
+    margin: 12rem 0;
+}
+
+.menu.expanded {
+    border-top: 1px solid black;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.7rem;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    margin: 0 !important;
+    bottom: 0;
+}
+
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    .menu.expanded{
+    .menu.expanded {
         width: 100%;
         line-height: 1.2;
-        li{
+
+        li {
             margin-right: 1rem;
         }
     }
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
-
-}
+@media screen and (min-width: 40em) {}
 
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
 
 /* Large and up */
-@media screen and (min-width: 64em) {
-
-}
+@media screen and (min-width: 64em) {}
 
 /* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-}
-
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
