@@ -102,11 +102,14 @@
     </div>
   </div>
 </div>
-<ul class="menu expanded">
-  <li>Rodrigo Venegas Cisternas</li>
+<div data-sticky-container>
+  <ul class="menu expanded align-middle" data-sticky data-options="marginBottom:0;" style="width:100%" data-top-anchor="1" data-btm-anchor="content:bottom">
+    <li>Nicolás Venegas</li>
   <li>22 de septiembre, 2024</li>
-    <li class="text-right">textos</li>
-</ul>
+    <li class="text-right"><b>textos</b></li>
+  </ul>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <!-- Compressed JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js"
@@ -123,8 +126,26 @@ function raf(time) {
   lenis.raf(time)
   requestAnimationFrame(raf)
 }
-
 requestAnimationFrame(raf)
+// random bg
+const hexDigits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "a", "b", "c", "d", "e", "f"];
+
+function generateRandomColor(hexDigits) {
+  let bgColor = "#";
+
+  for (let i = 0; i < 6; i++) {
+    const index = Math.floor(Math.random() * hexDigits.length);
+    bgColor += hexDigits[index];
+  }
+  return bgColor;
+}
+
+function changeBgColor() {
+  const color = generateRandomColor(hexDigits);
+  document.body.style.backgroundColor = color;
+}
+
+window.addEventListener("load", changeBgColor());
   </script>
 </body>
 
