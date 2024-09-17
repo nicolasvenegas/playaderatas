@@ -163,14 +163,14 @@ hr {
 }
 
 #featured-image {
-    max-height: 55vh;
+    height: 55vh;
     overflow: hidden;
 }
 
 #sidebar {
     border-right: 1px solid rgba(0, 0, 0, 1);
     min-height: 100vh;
-
+    padding-bottom: 12rem;
     h1 {
         padding: 0.5rem 2rem 0;
         margin: 0;
