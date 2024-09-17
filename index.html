@@ -9,7 +9,8 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
   <link rel="stylesheet" href="styles/style_1.css">
-  <title>Invitación, en playaderatas</title>
+  <title>A complete beginner’s guide to changing background colour on
+scroll using jQuery, en playaderatas</title>
 </head>
 
 <body>
@@ -67,7 +68,8 @@ Venegas</small></a></li>
       <div id="pool" class="small-12 medium-8 cell">
         <img id="featured-image" src="img/imagen_logo.jpg">
         <div id="inner">
-          <h1>Invitación</h1>
+          <h1>A complete beginner’s guide to changing background colour
+on scroll using jQuery</h1>
           <h3 id="planteamiento-inicial">Planteamiento inicial</h3>
           <p>La actividad que se propone realizar es la creación de un
           dispositivo portable que envie imagenes en tiempo real
@@ -168,7 +170,7 @@ Venegas</small></a></li>
       data-top-anchor="1" data-btm-anchor="content:bottom">
       <li>Nicolás Venegas</li>
       <li>22 de septiembre 2024</li>
-      <li class="text-right"><b>textos</b></li>
+      <li class="text-right">#<b>entrevistas</b></li>
     </ul>
   </div>
 
@@ -208,6 +210,16 @@ Venegas</small></a></li>
     // }
 
     // window.addEventListener("load", changeBgColor());
+  </script>
+  <script>
+ const [red, green, blue] = [69, 111, 225]
+const section1 = document.querySelector('#sidebar')
+
+window.addEventListener('scroll', () => {
+  const y = 1 + (window.scrollY || window.pageYOffset) / 150
+  const [r, g, b] = [red/y, green/y, blue/y].map(Math.round)
+  section1.style.backgroundColor = `rgb(, , )`
+})
   </script>
 </body>
 

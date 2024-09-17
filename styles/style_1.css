@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     font-family: "Mingzat", sans-serif;
     line-height: 1.65;
-    background-color: rgb(244, 200, 193);
+    background-color: #ccffff;
     letter-spacing: -.25px;
 }
 
@@ -59,6 +59,7 @@ h1 {
     margin-top: 0;
     font-size: 1.8em;
     text-transform: uppercase;
+    line-height: 1.4;
     img{
         max-width: 250px;
         margin: 2rem 0 1rem 0;
@@ -246,7 +247,7 @@ hr {
     left: 0;
     width: 100%;
     padding: 1rem 1.7rem;
-    background: rgb(244, 200, 193);
+    background: #cc99cc;
     color: rgba(0, 0, 0, 1);
     margin: 0 !important;
     bottom: 0;
@@ -295,6 +296,7 @@ hr {
         overflow-y: scroll;
         max-height: 100%;
         scrollbar-color: red;
+        background: #cccc33;
     }
 
     #pool {
