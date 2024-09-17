@@ -107,7 +107,7 @@
     }
 
     #content{
-        padding: 6rem 0;
+        margin: 12rem 0;
     }
     .menu.expanded{
         position: fixed;
@@ -120,7 +120,7 @@
       bottom: 0;
     }
 
-    
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
