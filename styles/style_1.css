@@ -283,7 +283,13 @@ hr {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-
+    h1 {
+        margin-bottom: 0;
+        img {
+            mix-blend-mode: multiply;
+            text-align: center;
+        }
+    }
     #content,
     .menu.expanded {
         display: none;
@@ -313,6 +319,16 @@ hr {
     figcaption {
         padding: 1rem 0;
     }
+    #templateBody {
+        background-color: none;
+        box-shadow: none;
+      }
+}
+.refferal_badge{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    opacity: 0.2;
 }
 
 /* Medium and up */
