@@ -161,7 +161,13 @@ hr {
     border-bottom: 1px solid black;
     border-left: 0;
 }
-
+.button{
+    background: blue;
+    border-radius: 50px;
+}
+.button:hover{
+    background: rgb(0,0,0,0.9);
+}
 #featured-image {
     height: 55vh;
     overflow: hidden;
@@ -320,8 +326,11 @@ hr {
         padding: 1rem 0;
     }
     #templateBody {
-        background-color: none;
-        box-shadow: none;
+        background-color: none !important;
+        box-shadow: none !important;
+      }
+      .formEmailButtonOval{
+        border-radius: 5px !important;
       }
 }
 .refferal_badge{
@@ -387,6 +396,13 @@ hr {
     #content,
     .menu.expanded {
         display: none;
+    }
+    h1 {
+        margin-bottom: 0;
+        img {
+            mix-blend-mode: multiply;
+            text-align: center;
+        }
     }
 }
 
