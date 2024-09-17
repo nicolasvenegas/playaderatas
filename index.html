@@ -21,13 +21,13 @@
       <h2 id="planteamiento-inicial">Planteamiento inicial</h2>
       <p>La actividad que se propone realizar es la creación de un
       dispositivo portable que envie imagenes en tiempo real moduladas
-      en BLU (Banda Lateral Única) con la codificación SSTV.</p>
-      <p>En la imagen emitida en la banda de radioaficionados VHF deberá
-      de incorporar información de quién está emitiendo y los valores de
-      los distintos sensores.</p>
-      <p>La transmisión se deberá de realizar con la suficiente potencia
-      y las especificaciones del protocolo SSTV para que sea posible su
-      recepción desde tierra. Organización y desarrollo</p>
+      en BLU (Banda Lateral Única) con la codificación SSTV. En la
+      imagen emitida en la banda de radioaficionados VHF deberá de
+      incorporar información de quién está emitiendo y los valores de
+      los distintos sensores. La transmisión se deberá de realizar con
+      la suficiente potencia y las especificaciones del protocolo SSTV
+      para que sea posible su recepción desde tierra.</p>
+      <h2 id="organización-y-desarrollo">Organización y desarrollo</h2>
       <p>Para la realización de este proyecto se ha divido el diferentes
       partes. Cada participante se hacía responsable de su tarea. Las
       diferentes tareas son las siguientes:</p>
@@ -40,26 +40,40 @@
       <li>Decodificador de la imagen JPG.</li>
       <li>Interconexión y programación de todos los sistemas.</li>
       </ol>
-      <h2 id="elección-de-la-plataforma-de-desarrollo">Elección de la
-      plataforma de desarrollo</h2>
-      <p>La principal requisito es utilizar un microcontrolador tipo
-      Arduino, frente a un mini-pc con Linux. La principal razón es que
-      queremos tener control total de la emisión creando todos los
-      elementos desde la base.</p>
+      <p>sin numerar sería:</p>
+      <ul>
+      <li>Elección de la plataforma de desarrollo.</li>
+      <li>Creación del codificador de SSTV.</li>
+      <li>Codificación del middleware del síntesis de audio.</li>
+      <li>Codificación del middleware para la recepción de imagenes con
+      arduino.</li>
+      <li>Decodificador de la imagen JPG.</li>
+      <li>Interconexión y programación de todos los sistemas.</li>
+      </ul>
+      <h3 id="elección-de-la-plataforma-de-desarrollo">Elección de la
+      plataforma de desarrollo</h3>
+      <p><strong>La principal requisito es utilizar un microcontrolador
+      tipo Arduino, frente a un mini-pc con Linux. La principal razón es
+      que queremos tener control total de la emisión creando todos los
+      elementos desde la base.</strong></p>
       <p>De los diferentes microcontroladores del mercado necesitamos
       uno lo suficientemente capaz de decodificar una imagen y guardar
       todos los pixeles en RAM. Esto ya nos limita bastante las
       posibilidades, pues la gran mayoria de microcontroladores de la
-      familia arduino se quedan fuera.</p>
-      <p>Otro requisito es que tiene que contar con 2 conexiones UART
-      para la comunicación con la cámara, y el GPS.</p>
-      <p>Por estos motivos el micro utilizado ha sido el Arduino DUE.
-      Aunque para versiones futuras se podría utilizar el ESP32.
-      Codificador SSTV Scottie 1</p>
+      familia arduino se quedan fuera. Otro requisito es que tiene que
+      contar con 2 conexiones UART para la comunicación con la cámara, y
+      el GPS.</p>
+      <p>Por estos motivos el micro <em>utilizado ha sido el Arduino
+      DUE</em>. Aunque para versiones <strong>futuras se podría utilizar
+      el ESP32</strong>.</p>
+      <h3 id="codificador-sstv-scottie-1">Codificador SSTV Scottie
+      1</h3>
+      <blockquote>
       <p>Se ha optado por elegir el codificador SSTV Scottie 1 porque es
       robusto y rápido para enviar imágenes a color en banda estrecha.
       Se ha creado un codificador libre con las especificaciones del
       protocolo SSTV Scottie 11.</p>
+      </blockquote>
       <p>La explicación del codificador se encuentra en la web del
       RadioClub y el codificador completo se encuentra en el trabajo
       final expuesto más tarde.</p>
@@ -76,8 +90,8 @@
       <p>Para tomar la imagen de la Cámara TTL de Adafruit4 se ha
       utilizado la librería de Adafruit
       Adafruit-VC0706-Serial-Camera-Library5.</p>
-      <h3 id="decodificador-de-la-imagen-jpg">Decodificador de la imagen
-      JPG</h3>
+      <h4 id="decodificador-de-la-imagen-jpg">Decodificador de la imagen
+      JPG</h4>
       <p>Para emitir la imagen en SSTV, primero se tiene que decodificar
       y conseguir en hexadecimal el contenido de la imagen. Para hacer
       esto, hemos usado la libreria JPEGDecoder6 de Bodmer.
