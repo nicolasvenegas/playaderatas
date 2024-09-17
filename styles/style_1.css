@@ -53,12 +53,11 @@ h5,
     line-height: 1.15;
 }
 
-h1 {
+h1{
     margin: 0 0 var(--vspace-1) 0;
     line-height: calc(5.2917/var(--space)* var(--vspace));
     margin-top: 0;
     font-size: 1.8em;
-    text-transform: uppercase;
     line-height: 1.4;
     img{
         max-width: 250px;
@@ -68,9 +67,10 @@ h1 {
 
 h2 {
     margin: var(--vspace-2) 0 var(--vspace-3) 0;
-    line-height: 1em;
-    font-size: 1.6em;
+    line-height: 1.2;
+    font-size: 2em;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -84,6 +84,7 @@ h4 {
     margin: var(--vspace-2) 0 var(--vspace-3) 0;
     line-height: var(--vspace);
     font-size: 1.27em;
+    font-weight: 500;
 }
 
 h5 {
