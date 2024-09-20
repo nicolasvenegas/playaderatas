@@ -18,8 +18,8 @@ function centerCanvas() {
 
 
 function preload() {
-  font = loadFont("../www/fontface/DXRigraf-SemiBold.otf"); // no puede ser cualquiera, no todas las tipos otf funcionan
-  img1 = loadImage("../www/img/ratita_1.png")
+  font = loadFont("../fontface/DXRigraf-SemiBold.otf"); // no puede ser cualquiera, no todas las tipos otf funcionan
+  img1 = loadImage("../img/ratita_1.png")
 }
 
 function setup() {
