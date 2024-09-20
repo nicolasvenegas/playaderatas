@@ -23,7 +23,7 @@ function preload() {
 }
 
 function setup() {
-  //noLoop();
+  noLoop();
   frameRate(3);
   cnv = createCanvas(1000,400);
   cnv.parent('sketch-holder');
