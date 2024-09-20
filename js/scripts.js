@@ -1,5 +1,5 @@
   // Define initial variables.
-  var words = [ "posibilidades", "ideas", "búsquedas", "técnicas", "artes" ,"modos", "juegos"];
+  var words = [ "posibilidades", "ideas", "búsquedas", "procedimientos", "técnicas", "artes" ,"modos", "juegos"];
   var count = 0;
   
   /*
