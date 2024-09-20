@@ -68,7 +68,12 @@ a:hover, a:focus{
   }  
   blockquote{
     color: #333;
-    margin: 3rem 0 3rem 0 !important;
+    margin: 3rem 0 0 0 !important;
+    font-size: .87rem;
+  }
+  blockquote p{
+    color: #333;
+    font-style: 1.6rem !important;
   }
   cite{
     color: black;
@@ -79,6 +84,12 @@ a:hover, a:focus{
     font-size: 1.3rem;
     line-height: 1.4;
     margin-bottom: 2rem;
+  }
+  h5{
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: Fraunces, 'DX-Rigraf', sans-serif;
+    margin-bottom: 3rem;
   }
   h6{
     font-family: Fraunces, 'DX-Rigraf', sans-serif;
