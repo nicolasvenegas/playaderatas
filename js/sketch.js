@@ -18,7 +18,7 @@ function centerCanvas() {
 
 
 function preload() {
-  font = loadFont("../fontface/DXRigraf-SemiBold.otf"); // no puede ser cualquiera, no todas las tipos otf funcionan
+  font = loadFont("../fonts/DXRigraf-SemiBold.otf"); // no puede ser cualquiera, no todas las tipos otf funcionan
   img1 = loadImage("../img/ratita_1.png")
 }
 
