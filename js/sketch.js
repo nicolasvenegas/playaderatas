@@ -39,7 +39,7 @@ function draw() {
   ellipse(507,62,120,120);
   image(img1,width/2-(600/4)/2,-10,600/4,464/4);
   // obtener el array de puntos. pudiese ser animado con un perlin esta vez solo se utilizaron 4 de los argumentos de textToPoints
-    let points = font.textToPoints("PLAYA de RATAS", -120, height / 1.5, 120, {sampleFactor: 0.15}); 
+    let points = font.textToPoints("PLAYA de RATAS", -100, height / 1.5, 120, {sampleFactor: 0.15}); 
 
     
   // imprimir puntos variando el color dependiendo de su valor argumento alpha
