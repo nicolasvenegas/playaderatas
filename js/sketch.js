@@ -47,10 +47,12 @@ function draw() {
   // condicionales color sobre umbral parametro alpha
     if (p.alpha < 50) {
       fill(random(255),random(155,200),random(255),random(255));
+      let randomSize = random(2, 20);
     } else {
       fill(random(255),random(155,205),random(255),random(255));
+      let randomSize = random(2, 10);
     }
-    let randomSize = random(2, 20);
+    
     ellipse(p.x+windowWidth/10, p.y, randomSize, randomSize);
   }
   noStroke();
